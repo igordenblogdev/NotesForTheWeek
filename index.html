@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки на неделю</title>
+    <!-- Подключаем файлы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Подключаем файл скриптов -->
+    <script src="js/appNotes.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button id="menuBtn">
+            Дни недели
+        </button>
+        <div class="nav" id="nav">
+            <div id="closeNavMenu">X</div>
+            <div class="nav-tabs">
+                <a href="#" data-tab="1" class="nav-tab active">Понедельник</a>
+                <a href="#" data-tab="2" class="nav-tab">Вторник</a>
+                <a href="#" data-tab="3" class="nav-tab">Среда</a>
+                <a href="#" data-tab="4" class="nav-tab">Четверг</a>
+                <a href="#" data-tab="5" class="nav-tab">Пятница</a>
+                <a href="#" data-tab="6" class="nav-tab">Суббота</a>
+                <a href="#" data-tab="7" class="nav-tab">Воскресенье</a>
+            </div>
+        </div>
+        <div class="box-content">
+            <div class="tab-content">
+                <div data-tab-content="1" class="tab-pane active">
+                    <h1>Список дел на <br> <span>понедельник</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="1"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="1"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="1">
+                    </ul>
+                </div>
+                <div data-tab-content="2" class="tab-pane">
+                    <h1>Список дел на <br> <span>вторник</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="2"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="2"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="2">
+                    </ul>
+                </div>
+                <div data-tab-content="3" class="tab-pane">
+                    <h1>Список дел на <br> <span>среду</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="3"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="3"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="3">
+                    </ul>
+                </div>
+                <div data-tab-content="4" class="tab-pane">
+                    <h1>Список дел на <br> <span>четверг</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="3"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="3"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="3">
+                    </ul>
+                </div>
+                <div data-tab-content="5" class="tab-pane">
+                    <h1>Список дел на <br> <span>пятницу</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="3"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="3"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="3">
+                    </ul>
+                </div>
+                <div data-tab-content="6" class="tab-pane">
+                    <h1>Список дел на <br> <span>субботу</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="3"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="3"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="3">
+                    </ul>
+                </div>
+                <div data-tab-content="7" class="tab-pane">
+                    <h1>Список дел на <br> <span>воскресенье</span></h1>
+                    <!-- Форма ввода -->
+                    <div class="box-form">
+                        <div class="box-input">
+                            <i class='bx bxs-note'></i>
+                            <input
+                                type="text"
+                                id="titleNote"
+                                data-input="3"
+                                placeholder="Введите наименование"
+                            >
+                        </div>
+                        <button
+                            type="submit"
+                            id="createBtn"
+                            data-create="3"
+                        >
+                            Добавить
+                        </button>
+                    </div>
+                    <!-- Список дел -->
+                    <ul id="listNotes" data-index="3">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
